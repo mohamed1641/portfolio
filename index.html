@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Kamel | Video Editor & Marketing Creative</title>
+  <meta name="description" content="Mohamed Kamel — video editing, content creation, and creative marketing for brands, social media, and digital campaigns." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/style.css" />
+</head>
+
+<body>
+  <div class="noise"></div>
+  <canvas id="particlesCanvas" aria-hidden="true"></canvas>
+
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">MK</div>
+    <div class="loader-bar">
+      <span></span>
+    </div>
+    <p>Mohamed Kamel Creative</p>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="#home" class="logo magnetic">
+        <span class="logo-mark">MK</span>
+        <span class="logo-text">Mohamed Kamel</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#portfolio" class="nav-link">المجالات</a>
+        <a href="#process" class="nav-link">الخطوات</a>
+        <a href="#contact" class="nav-link">تواصل</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-small btn-neon magnetic nav-cta">
+        <span>ابدأ مشروعك</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="orb orb-three"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="availability">
+            <span class="pulse"></span>
+            متاح لمشاريع جديدة
+          </div>
+
+          <p class="eyebrow glitch" data-text="VIDEO EDITOR • CONTENT CREATOR • MARKETING">
+            VIDEO EDITOR • CONTENT CREATOR • MARKETING
+          </p>
+
+          <h1>
+            محتوى وتسويق
+            <span class="gradient-text">بستايل بلاك</span>
+            يخلي البراند يبان ويبيع.
+          </h1>
+
+          <p class="hero-description">
+            بعمل فيديوهات Reels وShorts وإعلانات ومحتوى تسويقي بإيقاع تريندي،
+            فكرة واضحة، Hook قوي، Visual Identity، ورسالة تساعد البراند يكبر ويبيع.
+          </p>
+
+          <div class="typing-wrap">
+            <span>متخصص في:</span>
+            <strong id="typingText"></strong>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary magnetic">
+              <span>اكتشف المجالات</span>
+              <i>↗</i>
+            </a>
+            <a href="#contact" class="btn btn-outline magnetic">
+              <span>احجز مكالمة</span>
+              <i>⚡</i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card glass tilt-card">
+              <strong>Reels</strong>
+              <span>مونتاج قصير</span>
+            </div>
+            <div class="stat-card glass tilt-card">
+              <strong>Ads</strong>
+              <span>إعلانات رقمية</span>
+            </div>
+            <div class="stat-card glass tilt-card">
+              <strong>Motion</strong>
+              <span>هوية بصرية متحركة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-showcase reveal">
+          <div class="phone-frame tilt-card">
+            <div class="phone-notch"></div>
+            <div class="story-card">
+              <div class="story-overlay"></div>
+
+              <div class="story-top">
+                <span class="avatar"></span>
+                <div>
+                  <strong>Mohamed Kamel</strong>
+                  <small>Video Editing</small>
+                </div>
+              </div>
+
+              <div class="play-button">▶</div>
+
+              <div class="story-caption">
+                <span class="hot-badge">TRENDING</span>
+                <h3>Brand Reel Edit</h3>
+                <p>Fast cuts • captions • sound design</p>
+              </div>
+
+              <div class="story-actions">
+                <span>♡</span>
+                <span>💬</span>
+                <span>↗</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edit-panel glass tilt-card">
+            <div class="panel-head">
+              <span>Timeline</span>
+              <small>00:00:28</small>
+            </div>
+            <div class="track track-one"></div>
+            <div class="track track-two"></div>
+            <div class="track track-three"></div>
+          </div>
+
+          <div class="floating-chip chip-one glass">SFX Pack</div>
+          <div class="floating-chip chip-two glass">4K Export</div>
+          <div class="floating-chip chip-three glass">AI Captions</div>
+          <div class="floating-chip chip-four glass">Color Pop</div>
+        </div>
+      </div>
+
+      <a href="#services" class="scroll-indicator">
+        <span></span>
+        Scroll
+      </a>
+    </section>
+
+    <section class="marquee-section">
+      <div class="marquee">
+        <div class="marquee-content">
+          <span>Reels Editing</span>
+          <span>Shorts</span>
+          <span>Motion Graphics</span>
+          <span>Color Grading</span>
+          <span>Sound Design</span>
+          <span>Captions</span>
+          <span>Social Ads</span>
+          <span>Creative Direction</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>Reels Editing</span>
+          <span>Shorts</span>
+          <span>Motion Graphics</span>
+          <span>Color Grading</span>
+          <span>Sound Design</span>
+          <span>Captions</span>
+          <span>Social Ads</span>
+          <span>Creative Direction</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">الخدمات</span>
+          <h2>خدمات تجمع بين المونتاج، صناعة المحتوى، والتسويق الرقمي.</h2>
+          <p>من أول الفكرة والـ Hook لحد الإعلان النهائي، كل حاجة معمولة عشان المحتوى يلفت الانتباه ويحقق نتيجة.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card glass reveal tilt-card">
+            <div class="service-icon">🎬</div>
+            <h3>Short Form Editing</h3>
+            <p>Reels, TikTok, Shorts بإيقاع سريع، Hooks قوية، Transitions، وكابشن واضح.</p>
+            <div class="mini-tags">
+              <span>Reels</span><span>Shorts</span><span>TikTok</span>
+            </div>
+          </article>
+
+          <article class="service-card glass reveal tilt-card">
+            <div class="service-icon">📣</div>
+            <h3>Marketing Content</h3>
+            <p>محتوى بيشرح العرض، يبرز المشكلة، ويقدم البراند بشكل جذاب وسهل الفهم.</p>
+            <div class="mini-tags">
+              <span>Awareness</span><span>Offer</span><span>Branding</span>
+            </div>
+          </article>
+
+          <article class="service-card glass reveal tilt-card">
+            <div class="service-icon">🚀</div>
+            <h3>Ad Creatives</h3>
+            <p>إعلانات سوشيال ميديا قصيرة مصممة للـ Clicks، Leads، والمبيعات.</p>
+            <div class="mini-tags">
+              <span>Meta Ads</span><span>UGC</span><span>CTA</span>
+            </div>
+          </article>
+
+          <article class="service-card glass reveal tilt-card">
+            <div class="service-icon">🧠</div>
+            <h3>Content Strategy</h3>
+            <p>أفكار محتوى، Hooks، Content Calendar، وزوايا تسويقية مناسبة للجمهور.</p>
+            <div class="mini-tags">
+              <span>Hooks</span><span>Calendar</span><span>Angles</span>
+            </div>
+          </article>
+
+          <article class="service-card glass reveal tilt-card">
+            <div class="service-icon">📊</div>
+            <h3>Campaign Optimization</h3>
+            <p>تحسين الرسالة، نسخة الإعلان، والـ Creative بناءً على هدف الحملة.</p>
+            <div class="mini-tags">
+              <span>Testing</span><span>Analytics</span><span>Growth</span>
+            </div>
+          </article>
+
+          <article class="service-card glass reveal tilt-card">
+            <div class="service-icon">⚡</div>
+            <h3>Trendy Captions & SFX</h3>
+            <p>كابشن متحرك، مؤثرات صوتية، Highlights، وPopups تخلي الفيديو أسهل في المتابعة.</p>
+            <div class="mini-tags">
+              <span>Captions</span><span>SFX</span><span>Popups</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">مجالات الإبداع</span>
+          <h2>محتوى بصري مناسب لكل منصة وكل هدف تسويقي.</h2>
+          <p>استكشف أفكار المونتاج والإعلانات والموشن جرافيك، وشوف الأسلوب المناسب لبراندك.</p>
+        </div>
+
+        <div class="portfolio-toolbar reveal">
+          <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="reels">Reels</button>
+            <button class="filter-btn" data-filter="ads">Ads</button>
+            <button class="filter-btn" data-filter="youtube">YouTube</button>
+            <button class="filter-btn" data-filter="motion">Motion</button>
+          </div>
+
+          <label class="search-wrap">
+            <input type="search" id="portfolioSearch" placeholder="ابحث عن نوع محتوى..." />
+            <span>⌕</span>
+          </label>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Workflow</span>
+          <h2>من استراتيجية المحتوى للـ Creative النهائي بخطوات واضحة.</h2>
+        </div>
+
+        <div class="process-line">
+          <article class="process-card glass reveal tilt-card">
+            <span>01</span>
+            <h3>Strategy</h3>
+            <p>نحدد هدف الحملة، الجمهور، الرسالة، والمنصة المناسبة.</p>
+          </article>
+
+          <article class="process-card glass reveal tilt-card">
+            <span>02</span>
+            <h3>Creative Angle</h3>
+            <p>نطلع زاوية تسويقية وHook يخلي المشاهد يكمل.</p>
+          </article>
+
+          <article class="process-card glass reveal tilt-card">
+            <span>03</span>
+            <h3>Production</h3>
+            <p>مونتاج، كابشن، صوت، ألوان، CTA، وBrand feel.</p>
+          </article>
+
+          <article class="process-card glass reveal tilt-card">
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>تسليم نسخ مناسبة للإعلانات والسوشيال مع توصيات للنشر.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-kicker">تواصل</span>
+          <h2>عندك براند أو حملة؟ خلينا نطلع لها Creative يبيع.</h2>
+          <p>
+            احكيلي عن براندك وهدفك ونوع المحتوى اللي محتاجه.
+            املأ التفاصيل وافتح رسالة بريد جاهزة للمراجعة والإرسال.
+          </p>
+
+          <div class="social-cards">
+            <a href="mailto:m.kamel8543@gmail.com" class="social-card glass tilt-card">
+              <span>✉</span>
+              <div>
+                <strong>Email</strong>
+                <small>m.kamel8543@gmail.com</small>
+              </div>
+            </a>
+
+            <a href="#services" class="social-card glass tilt-card">
+              <span>✦</span>
+              <div>
+                <strong>الخدمات</strong>
+                <small>مونتاج وإعلانات وصناعة محتوى</small>
+              </div>
+            </a>
+
+            <a href="#portfolio" class="social-card glass tilt-card">
+              <span>▶</span>
+              <div>
+                <strong>المجالات</strong>
+                <small>استكشف اتجاهات المحتوى</small>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal" id="contactForm">
+          <div class="form-row">
+            <label>
+              الاسم
+              <input type="text" name="name" placeholder="اسمك" required />
+            </label>
+
+            <label>
+              الإيميل
+              <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
+            </label>
+          </div>
+
+          <label>
+            نوع الخدمة
+            <select name="service" required>
+              <option value="">اختار الخدمة</option>
+              <option value="shorts">Short Form Editing</option>
+              <option value="ads">Social Ads</option>
+              <option value="motion">Motion Graphics</option>
+              <option value="youtube">YouTube Edit</option>
+              <option value="content">Content Repurpose</option>
+            </select>
+          </label>
+
+          <label>
+            تفاصيل المشروع
+            <textarea name="message" rows="5" placeholder="احكيلي عن البراند، هدف الحملة، نوع الفيديوهات، المنصة، والميعاد..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary magnetic">
+            <span>ابعت الطلب</span>
+            <i>↗</i>
+          </button>
+
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Mohamed Kamel. Video Editor & Content Creator.</p>
+      <div class="footer-links">
+        <a href="#services">الخدمات</a>
+        <a href="#portfolio">المجالات</a>
+        <a href="mailto:m.kamel8543@gmail.com">البريد الإلكتروني</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="الرجوع للأعلى">↑</button>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
